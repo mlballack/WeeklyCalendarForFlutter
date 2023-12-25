@@ -1,0 +1,6 @@
+framework module weekly_calendar {
+  umbrella header "weekly_calendar-umbrella.h"
+
+  export *
+  module * { export * }
+}
