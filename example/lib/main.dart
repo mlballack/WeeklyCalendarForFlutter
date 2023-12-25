@@ -20,22 +20,11 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class HomeView extends StatefulWidget {
+class HomeView extends StatelessWidget {
   const HomeView({super.key});
 
   @override
-  State<HomeView> createState() => _HomeViewState();
-}
-
-class _HomeViewState extends State<HomeView> {
-  final mywidgetkey = GlobalKey();
-  double calendarHeight = 0;
-
-  @override
   Widget build(BuildContext context) {
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      debugPrint("size: ${mywidgetkey.currentContext?.size}");
-    });
     return Column(
       children: [
         calendar0(),
@@ -48,7 +37,7 @@ class _HomeViewState extends State<HomeView> {
 
   Widget calendar0() {
     return WeeklyCalendar(
-      calendarStyle: CalendarStyle(
+      calendarStyle: const CalendarStyle(
         padding: EdgeInsets.symmetric(vertical: 14, horizontal: 20),
         margin: EdgeInsets.all(14),
         decoration: BoxDecoration(),
@@ -65,8 +54,8 @@ class _HomeViewState extends State<HomeView> {
 
   Widget calendar1() {
     return WeeklyCalendar(
-      calendarStyle: CalendarStyle(
-          locale: "en",
+      calendarStyle: const CalendarStyle(
+          locale: "en_US",
           padding: EdgeInsets.symmetric(vertical: 14, horizontal: 20),
           margin: EdgeInsets.all(14),
           decoration: BoxDecoration(
@@ -88,16 +77,19 @@ class _HomeViewState extends State<HomeView> {
 
   Widget calendar2() {
     return WeeklyCalendar(
-      calendarStyle: CalendarStyle(
-        locale: "zh",
+      calendarStyle: const CalendarStyle(
+        locale: "zh_CN",
         padding: EdgeInsets.symmetric(vertical: 14, horizontal: 20),
         margin: EdgeInsets.all(14),
         decoration: BoxDecoration(
             color: Colors.black,
             borderRadius: BorderRadius.all(Radius.circular(14))),
         headerDateTextColor: Colors.white,
+        headerDateTextAlign: Alignment.center,
         isShowHeaderDateText: false,
         footerDateTextColor: Colors.white,
+        footerDateTextAlign: Alignment.center,
+        isShowFooterDateText: false,
         selectedCircleColor: Colors.white,
         todaySelectedCircleColor: Colors.greenAccent,
         dayTextColor: Colors.white,

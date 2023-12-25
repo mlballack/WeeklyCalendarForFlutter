@@ -1,44 +1,76 @@
 import 'package:flutter/material.dart';
 
 class CalendarStyle {
-  /// Common
+  /// The locale of the calendar.
   ///
   final String locale;
 
-  ///
+  /// The padding of the calendar.
   ///
   final EdgeInsets padding;
 
-  ///
+  /// The margin of the calendar.
   ///
   final EdgeInsets margin;
 
-  ///
+  /// The decoration of the calendar.
   ///
   final BoxDecoration decoration;
 
-  /// HeaderDateText
+  /// The alignment of the header date text.
   ///
   final Alignment headerDateTextAlign;
+
+  /// The color of the header date text.
+  ///
   final Color headerDateTextColor;
+
+  /// Whether to show the header date text.
+  ///
   final bool isShowHeaderDateText;
 
-  /// FooterDateText
+  /// The alignment of the footer date text.
   ///
   final Alignment footerDateTextAlign;
+
+  /// The color of the footer date text.
+  ///
   final Color footerDateTextColor;
+
+  /// Whether to show the footer date text.
+  ///
   final bool isShowFooterDateText;
 
-  /// DayCell
+  /// The color of the selected circle in DayCell.
+  ///
   final Color selectedCircleColor;
+
+  /// The color of the selected circle at today in DayCell.
+  ///
   final Color todaySelectedCircleColor;
+
+  /// The color of the day text in DayCell.
+  ///
   final Color dayTextColor;
+
+  /// The color of the day text at today in DayCell.
+  ///
   final Color todayDayTextColor;
+
+  /// The color of the selected day text in DayCell.
+  ///
   final Color selectedDayTextColor;
+
+  /// The color of the weekend day text in DayCell.
+  ///
   final Color weekendDayTextColor;
 
-  // DayOfWeekCell
+  /// The color of the text in DayOfWeekCell.
+  ///
   final Color dayOfWeekTextColor;
+
+  /// The color of the weekend text in DayOfWeekCell.
+  ///
   final Color weekendDayOfWeekTextColor;
 
   const CalendarStyle({
