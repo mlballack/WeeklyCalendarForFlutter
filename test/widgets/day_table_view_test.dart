@@ -26,7 +26,7 @@ void main() {
       final view = DayTableView(
         weekdays: weekdays,
         onSelect: (date) {
-          print(date);
+          debugPrint("date: $date");
         },
         selectedDate: selectedDate,
         currentDate: currentDate,

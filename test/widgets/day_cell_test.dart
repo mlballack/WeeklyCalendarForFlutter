@@ -54,6 +54,7 @@ void main() {
 
     expect(find.byType(DayCell), findsOneWidget);
 
+    // ignore: invalid_use_of_protected_member
     final candidates = find.byType(DayCell).allCandidates;
 
     final animatedContainer = candidates
@@ -83,6 +84,7 @@ void main() {
 
     expect(find.byType(DayCell), findsOneWidget);
 
+    // ignore: invalid_use_of_protected_member
     final candidates = find.byType(DayCell).allCandidates;
 
     final animatedContainer = candidates
@@ -112,6 +114,7 @@ void main() {
 
     expect(find.byType(DayCell), findsOneWidget);
 
+    // ignore: invalid_use_of_protected_member
     final candidates = find.byType(DayCell).allCandidates;
 
     final animatedContainer = candidates
