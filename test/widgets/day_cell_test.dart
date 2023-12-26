@@ -1,3 +1,5 @@
+// ignore_for_file: invalid_use_of_protected_member
+
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:weekly_calendar/src/widgets/day_cell.dart';
@@ -54,7 +56,6 @@ void main() {
 
     expect(find.byType(DayCell), findsOneWidget);
 
-    // ignore: invalid_use_of_protected_member
     final candidates = find.byType(DayCell).allCandidates;
 
     final animatedContainer = candidates
@@ -84,7 +85,6 @@ void main() {
 
     expect(find.byType(DayCell), findsOneWidget);
 
-    // ignore: invalid_use_of_protected_member
     final candidates = find.byType(DayCell).allCandidates;
 
     final animatedContainer = candidates
@@ -114,7 +114,6 @@ void main() {
 
     expect(find.byType(DayCell), findsOneWidget);
 
-    // ignore: invalid_use_of_protected_member
     final candidates = find.byType(DayCell).allCandidates;
 
     final animatedContainer = candidates

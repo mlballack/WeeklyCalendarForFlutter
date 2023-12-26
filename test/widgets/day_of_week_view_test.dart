@@ -24,6 +24,7 @@ void main() {
       await tester.pumpWidget(setupTestWidget(view));
       expect(find.byType(DayOfWeekView), findsOneWidget);
 
+      // ignore: invalid_use_of_protected_member
       final candidates = find.byType(DayOfWeekView).allCandidates;
       final weekdayNames = candidates
           .where((candidate) {
@@ -52,6 +53,7 @@ void main() {
       await tester.pumpWidget(setupTestWidget(view));
       expect(find.byType(DayOfWeekView), findsOneWidget);
 
+      // ignore: invalid_use_of_protected_member
       final candidates = find.byType(DayOfWeekView).allCandidates;
       final weekdayNames = candidates
           .where((candidate) {

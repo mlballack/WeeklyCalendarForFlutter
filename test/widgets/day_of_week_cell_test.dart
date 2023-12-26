@@ -23,6 +23,7 @@ void main() {
 
     expect(find.byType(DayOfWeekCell), findsOneWidget);
 
+    // ignore: invalid_use_of_protected_member
     final candidates = find.byType(DayOfWeekCell).allCandidates;
 
     final text = candidates
