@@ -9,6 +9,7 @@ A very simple weekly calendar widget for Flutter.
 * Customizable color scheme
 
 ## Usage
+
 Make sure to check out examples for more details.
 
 ### Installation
@@ -121,7 +122,7 @@ class CalendarStyle {
 }
 ```
 
-When using `CalendarStyle``, set it as follows:
+When using `CalendarStyle`, set it as follows:
 
 ```dart
 WeeklyCalendar(
@@ -134,14 +135,14 @@ WeeklyCalendar(
         ),
         headerDateTextAlign: Alignment.centerLeft,
         headerDateTextColor: Colors.white,
-        footerDateTextColor: Colors.white,
+        footerDateTextColor: Colors.grey,
         isShowFooterDateText: true,
     ),
 )
 ```
 
 ### Events
-You can receive 
+You can retreive the selected date through the callback function `onChangedSelectedDate`, when you select a specific date on WeeklyCalendar. 
 
 ```dart
 onChangedSelectedDate: (DateTime date) {
@@ -149,10 +150,13 @@ onChangedSelectedDate: (DateTime date) {
 }
 ```
 
+You can control whether to automatically select the date when changing the displayed week page by swiping, using the `isAutoSelect` parameter.
+
 ```dart
 isAutoSelect: bool,
 ```
 
+You retreive the day for Wednesday and the page state `PageState` (previous or next) when chainging the week page by swiping.
 
 ```dart
 onChangedPage: (DateTime date, PageState state) {
