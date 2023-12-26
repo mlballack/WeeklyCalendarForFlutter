@@ -21,7 +21,7 @@ To use this widget, add the following line to `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  weekly_calendar: ^0.1.1
+  weekly_calendar: ^0.1.2
 ```
 
 ### Basic setup
