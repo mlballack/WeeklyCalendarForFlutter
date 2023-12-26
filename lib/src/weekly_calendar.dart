@@ -8,8 +8,6 @@ import 'widgets/header_date_text.dart';
 import 'widgets/week_page.dart';
 import 'shared/utils.dart' show getWeekdays;
 
-export 'shared/calendar_style.dart';
-
 class WeeklyCalendar extends StatefulWidget {
   const WeeklyCalendar({
     super.key,
