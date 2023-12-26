@@ -2,6 +2,8 @@
 
 A very simple weekly calendar widget for Flutter.
 
+<img src="https://github.com/mlballack/WeeklyCalendarForFlutter/assets/77086210/dc5ef69e-b120-4339-80cc-b7bf695258a0" width="350" />
+
 ## Features 
 
 * Simple calendar widget
